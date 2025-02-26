@@ -27,6 +27,19 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
+        lambdaTestFunction {
+            testFunction()
+        }
+
+    }
+
+    fun lambdaTestFunction(int: Int = 5, myFunction: () -> Unit) {
+        myFunction.invoke()
+    }
+
+    fun testFunction() {
+        println("test")
     }
 }
 
