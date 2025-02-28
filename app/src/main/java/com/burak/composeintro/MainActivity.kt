@@ -51,12 +51,8 @@ fun MainScreen() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(
-            text = "Hello Compose",
-            color = Color.Black,
-            fontWeight = FontWeight.Bold,
-            fontSize = 56.sp
-        )
+       SpecialText("Hello Compose")
+
 
         Spacer(modifier = Modifier.padding(20.dp))
 
